@@ -1,0 +1,66 @@
+.container {
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.container p {
+    text-align: center;
+}
+
+/* Styling for the add leads button */
+.button-wrapper {
+    display: flex;  
+    justify-content: right;  
+    align-items: right;
+    width: 90%;
+}
+
+.button-wrapper a {
+    font-size: 15px;
+    display: block;
+    color: #232323;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.button-wrapper a:hover {
+    color: #3943B7;
+    transition: .2s;
+}
+
+/* For the lead record table */
+.lead-data {
+    margin: 0 auto 120px auto;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.lead-data td, 
+.lead-data th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.lead-data thead {
+    font-weight: bold;
+}
+
+.lead-data tbody:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.lead-data th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: transparent;
+    color: #232323;
+}
+
+.lead-data span:hover {
+    color: #3943B7;
+    cursor: pointer;
+}

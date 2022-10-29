@@ -1,0 +1,16 @@
+.container {
+    padding-top: 200px;
+    min-height: 100vh;
+    width: 60%;
+    margin: 0 auto 100px auto;
+}
+
+.container a, 
+.container a:visited {
+    color: #3943B7;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}

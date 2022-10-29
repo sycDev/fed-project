@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft Office Course</title>
+    <link rel="icon" href="img/company-logo.png">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/course-details-style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!--Font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" 
+    crossorigin="anonymous"></script>
+    
+    <!--jQueryUI-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" 
+    crossorigin="anonymous"></script>
+
+    <script src="js/course-details.js"></script>
+
+    <script>
+        // load common header and footer
+        $(document).ready(function() {
+            $('header').load("common/header.html");
+            $('footer').load("common/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header></header>
+
+    <!--Content-->
+    <div class="container">
+        <h1 style="text-align: center;">Microsoft Office</h1>
+        <div class="course-banner">
+            <img src="img/course-banner/office-banner.jpg" alt="Microsoft Office Course Banner">
+        </div>
+        <div id="tabs">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#tabs-1">Overview</a></li>
+                    <li><a href="#tabs-2">Program Structure</a></li>
+                    <li><a href="#tabs-3">Schedule</a></li>
+                </ul>
+                <a href="register.html" class="register-button">Register Now</a>
+            </div>
+            <div id="tabs-1">
+                <p>
+                    Microsoft Office is one of the most commonly used productivity tools in the business world. It is a 
+                    very essential and useful skills to get employment in organisations. This Microsoft Office Course 
+                    covered different features of the main Microsoft Office productivity tools such as Microsoft Word, 
+                    Microsoft Excel and Microsoft PowerPoint that can gives students an in-depth understanding.
+                </p>
+                After completing this course, you will able to: 
+                <ul>
+                    <li>Use Different Features of Word, Excel and PowerPoint</li>
+                    <li>Gain a Better Understanding of Microsoft Office Productivity Tools</li>
+                    <li>Boost your Productivity and Confidence to Apply the Microsoft Tools</li>
+                </ul>
+                <h4>Duration: 10 days</h4>
+            </div>
+            <div id="tabs-2">
+                <div id="accordion-1" class="accordion">
+                    <h3>Module 1: Microsoft Word</h3>
+                    <div>
+                        <ul>
+                            <li>Microsoft Word Interface Overview</li>
+                            <li>Type and Edit in Document</li>
+                            <li>Manage and Navigate Document</li>
+                            <li>Basic Font and Paragraph Formatting</li>
+                            <li>Styling the Document</li>
+                            <li>Inserting Word objects:
+                                <ul>
+                                    <li>Tables</li>
+                                    <li>Illustrations
+                                        <ul>
+                                            <li>Pictures</li>
+                                            <li>Shapes</li>
+                                            <li>Icons</li>
+                                            <li>SmartArt</li>
+                                            <li>Chart</li>
+                                        </ul>
+                                    </li>
+                                    <li>Textbox and WordArt</li>
+                                    <li>Equations</li>
+                                </ul>
+                            </li>
+                            <li>Working with Templates, Header and Footer</li>
+                            <li>Setup and Print Document</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-2" class="accordion">
+                    <h3>Module 2: Microsoft Excel</h3>
+                    <div>
+                        <ul>
+                            <li>Microsoft Excel Interface Overview</li>
+                            <li>Data Formatting</li>
+                            <li>Formula and Functions</li>
+                            <li>Data analysis</li>
+                            <li>Automation</li>
+                            <li>Data printing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-3" class="accordion">
+                    <h3>Module 3: Microsoft PowerPoint</h3>
+                    <div>
+                        <ul>
+                            <li>Microsoft PowerPoint Interface Overview</li>
+                            <li>Create Presentation Slide</li>
+                            <li>Format Presentation Slide</li>
+                            <li>Customize Presentation Slide</li>
+                            <li>Tips to Make Presentation Looks Professional</li>
+                            <li>Save and Present Slide</li>
+                            <li>Themes and Backgrounds</li>
+                            <li>Transitions and Animation</li>
+                            <li>Slide Templates, Handouts and Notes</li>
+                            <li>Audio and Video in Slide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <table class="schedule">
+                    <tr>
+                        <th>Intake Session</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr class="data">
+                        <td>December 2022</td>
+                        <td>5 December 2022 - 20 December 2022</td>
+                        <td><a href="dec22-office-schedule.html">View Schedule</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer></footer>
+</body>
+</html>

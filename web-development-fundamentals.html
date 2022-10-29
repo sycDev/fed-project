@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Development Fundamentals Course</title>
+    <link rel="icon" href="img/company-logo.png">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/course-details-style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!--Font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" 
+    crossorigin="anonymous"></script>
+    
+    <!--jQueryUI-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" 
+    crossorigin="anonymous"></script>
+
+    <script src="js/course-details.js"></script>
+
+    <script>
+        // load common header and footer
+        $(document).ready(function() {
+            $('header').load("common/header.html");
+            $('footer').load("common/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header></header>
+
+    <!--Content-->
+    <div class="container">
+        <h1 style="text-align: center;">Web Development Fundamentals</h1>
+        <div class="course-banner">
+            <img src="img/course-banner/web-dev-banner.jpg" alt="Web Development Fundamentals Course Banner">
+        </div>
+        <div id="tabs">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#tabs-1">Overview</a></li>
+                    <li><a href="#tabs-2">Program Structure</a></li>
+                    <li><a href="#tabs-3">Schedule</a></li>
+                </ul>
+                <a href="register.html" class="register-button">Register Now</a>
+            </div>
+            <div id="tabs-1">
+                <p>
+                    In this course, you will learn the basics of developing a website from scratch using HyperText Markup 
+                    Language (HTML), Cascading Style Sheets (CSS) and Javascript, all the way to live your own website. 
+                </p>
+                After completing this course, you will able to: 
+                <ul>
+                    <li>Understand the Concept of World Wide Web</li>
+                    <li>Structuring Web Page Content using HTML</li>
+                    <li>Styling the Content with CSS</li>
+                    <li>Create Dynamic Web Pages with Javascript</li>
+                    <li>Publish Website to Live</li>
+                </ul>
+                <h4>Duration: 15 days</h4>
+            </div>
+            <div id="tabs-2">
+                <div id="accordion-1" class="accordion">
+                    <h3>Module 1: The World Wide Web</h3>
+                    <div>
+                        <ul>
+                            <li>Introduction</li>
+                            <li>History</li>
+                            <li>The Technology of the Web:
+                                <ul>
+                                    <li>HTTP Request</li>
+                                    <li>HTTP Response</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-2" class="accordion">
+                    <h3>Module 2: HTML Basics</h3>
+                    <div>
+                        <ul>
+                            <li>Basic HTML Tags:
+                                <ul>
+                                    <li>Headings</li>
+                                    <li>Paragraphs</li>
+                                    <li>Images</li>
+                                    <li>Hyperlinks</li>
+                                    <li>Simple Text Formatting</li>
+                                </ul>
+                            </li>
+                            <li>Advanced HTML Tags:
+                                <ul>
+                                    <li>Unordered Lists</li>
+                                    <li>Ordered Lists</li>
+                                    <li>Description Lists</li>
+                                    <li>Nesting Lists</li>
+                                    <li>Tables</li>
+                                    <li>Audio</li>
+                                    <li>Video</li>
+                                    <li>iFrames</li>
+                                </ul>
+                            </li>
+                            <li>Semantic HTML Tags</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-3" class="accordion">
+                    <h3>Module 3: Cascading Style Sheets</h3>
+                    <div>
+                        <ul>
+                            <li>Introduction to CSS</li>
+                            <li>Styling for HTML element:
+                                <ul>
+                                    <li>Background</li>
+                                    <li>Text</li>
+                                    <li>Font</li>
+                                </ul>
+                            </li>
+                            <li>Changing page layout:
+                                <ul>
+                                    <li>CSS Box Model</li>
+                                    <li>Display</li>
+                                    <li>Floating</li>
+                                    <li>Positioning</li>
+                                    <li>Full Page Layout</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-4" class="accordion">
+                    <h3>Module 4: Javascript</h3>
+                    <div>
+                        <ul>
+                            <li>Understanding Javascript characteristics:
+                                <ul>
+                                    <li>Case-sensitivty</li>
+                                    <li>Variables</li>
+                                    <li>Data Types</li>
+                                </ul>
+                            </li>
+                            <li>Statements</li>
+                            <li>Objects and Properties</li>
+                            <li>Methods</li>
+                            <li>Functions</li>
+                            <li>Operators:
+                                <ul>
+                                    <li>Mathematical Operators</li>
+                                    <li>Assignment Operators</li>
+                                    <li>Comparison Operators</li>
+                                    <li>Logical Operators</li>
+                                </ul>
+                            </li>
+                            <li>Expressions</li>
+                            <li>Interacting with User:
+                                <ul>
+                                    <li>Dialog boxes</li>
+                                    <li>Confirmation</li>
+                                    <li>Prompting</li>
+                                    <li>Alerts</li>
+                                </ul>
+                            </li>
+                            <li>Events:
+                                <ul>
+                                    <li>Page Load</li>
+                                    <li>Form</li>
+                                    <li>Mouse</li>
+                                </ul>
+                            </li>
+                            <li>Working with Forms:
+                                <ul>
+                                    <li>Drop Down Selection</li>
+                                    <li>Checkboxes</li>
+                                    <li>Radio Button</li>
+                                    <li>Form Input Validation</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-5" class="accordion">
+                    <h3>Module 5: Website Hosting</h3>
+                    <div>
+                        <ul>
+                            <li>What is Web Hosting</li>
+                            <li>Website Name Registration</li>
+                            <li>Going live</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <table class="schedule">
+                    <tr>
+                        <th>Intake Session</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr class="data">
+                        <td>September 2022</td>
+                        <td>5 September 2022 - 28 September 2022</td>
+                        <td><a href="sept22-web-schedule.html">View Schedule</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer></footer>
+</body>
+</html>

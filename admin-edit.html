@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Edit Leads</title>
+    <link rel="icon" href="img/company-logo.png">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/register-style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!--Font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" 
+    crossorigin="anonymous"></script>
+
+    <!--jQueryUI-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" 
+    crossorigin="anonymous"></script>
+
+    <script src="js/form.js"></script>
+    <script src="js/localstorage.js"></script>
+    <script src="js/admin-edit.js"></script>
+
+    <script>
+        // load common header and footer
+        $(document).ready(function() {
+            $('header').load("common/header.html");
+            $('footer').load("common/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header></header>
+
+    <!--Content-->
+    <div class="container">
+        <h1 style="text-align: center;">Edit Leads</h1>
+        <div class="form-wrapper">
+            <form id="admin-edit">
+                <div class="input-wrapper">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" pattern="^(?!\s+$)[a-zA-Z\/,'. -]+$" title="Only accept letter, spacing, symbols , / - . '" required>
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="first-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" pattern="^(?!\s+$)[a-zA-Z\/,'. -]+$" title="Only accept letter, spacing, symbols , / - . '" required>
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="datepicker">Date of Birth</label><br>
+                    <input type="text" id="birthday" name="birthday" readonly="readonly" required>
+                </div>
+
+                <div class="input-wrapper">
+                    Gender<br>
+                    <div class="wrapper">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="eg: example@gmail.com" required>
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="phone">Contact number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="eg: 0164335789" pattern="^(\+?6?01)[0-46-9]-*[0-9]{7,8}$" required>
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="status">Current Status</label>
+                    <select name="status" id="status" required>
+                        <option value="">Are you a...</option>
+                        <option value="Secondary School Student">Secondary School Student</option>
+                        <option value="SPM Leaver">SPM Leaver</option>
+                        <option value="Pre-U Student">Pre-U Student</option>
+                        <option value="Undergraduate Student">Undergraduate Student</option>
+                        <option value="Postgraduate Student">Postgraduate Student</option>
+                        <option value="Working Professional">Working Professional</option>
+                        <option value="Unemployed">Unemployed</option>
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="course">Course</label>
+                    <select name="course" id="course" required>
+                        <option value="">Select Course</option>
+                        <option value="Web Development Fundamentals">Web Development Fundamentals</option>
+                        <option value="Programming in Java">Programming in Java</option>
+                        <option value="Microsoft Office">Microsoft Office</option>
+                    </select>
+                </div>
+
+                <br>
+                <div class="button-wrapper">
+                    <button type="submit" id="update-btn">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer></footer>
+</body>
+</html>

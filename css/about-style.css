@@ -1,0 +1,84 @@
+.container {
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/about-us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.intro-content {
+    padding: 100px;
+    color: #ffffff;
+}
+
+.intro-content p {
+    line-height: 25px;
+}
+
+/* For vision section */
+.vision {
+    margin: 0 150px 50px 150px;
+}
+
+.vision .box {
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.vision .card {
+    margin: 30px;
+}
+
+.vision h3 {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.vision p {
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+/* For team section */
+.team {
+    margin: 0 150px 100px 150px;
+}
+
+.team h2 {
+    text-align: center;
+}
+
+.team .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+}
+
+.team .card {
+    padding: 10px;
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+    object-fit: cover;
+}
+
+.team .card h4,
+.team .card p {
+    width: 200px;
+    margin: 10px auto; 
+    text-align: center;
+}

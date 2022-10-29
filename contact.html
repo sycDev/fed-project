@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="icon" href="img/company-logo.png">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/contact-style.css">
+
+    <!--Font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0">
+    
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" 
+    crossorigin="anonymous"></script>
+    <script>
+        // load common header and footer
+        $(document).ready(function() {
+            $('header').load("common/header.html");
+            $('footer').load("common/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header></header>
+
+    <!--Content-->
+    <div class="content">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <div class="container">
+            <div class="details">
+                <span class="material-symbols-outlined">call</span>
+                <div class="text">04 - 218 0333</div>
+            </div>
+            <div class="details">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div class="text">019 - 474 9323</div>
+            </div>
+            <div class="details">
+                <span class="material-symbols-outlined">mail</span>
+                <div class="text">enquiry@abc.edu.my</div>
+            </div>
+            <div class="details">
+                <span class="material-symbols-outlined">location_on</span>
+                <div class="text">7, Gat Lebuh China, Taman Dhoby Ghaut, 10300 George Town, Pulau Pinang.</div>
+            </div>
+            <div class="details">
+                <iframe id="google-map" src="https://maps.google.com/maps?q=7,%20Gat%20Lebuh%20China,%20Taman%20Dhoby%20Ghaut,%2010300%20George%20Town,%20Pulau%20Pinang.&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+            <div class="details">
+                <div class="text">Opening Hours: 8am - 7pm (Monday - Friday), Closed on Saturday & Sunday</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer></footer>
+</body>
+</html>

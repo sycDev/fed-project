@@ -1,0 +1,8 @@
+.container {
+    margin: 20px 0;
+}
+
+.container p,
+.container li {
+    line-height: 30px;
+}

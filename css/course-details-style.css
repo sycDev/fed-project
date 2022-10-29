@@ -1,0 +1,120 @@
+.container {
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+/* For the course banner image */
+.container .course-banner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .course-banner img {
+    width: 100%;
+}
+
+#tabs {
+    border: 0;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    width: 80vw;
+}
+
+/* For the register button in the sidebar */
+#tabs .register-button {
+    display: block;
+    background-color: #3943B7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+	font-size: 18px; 
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin: 150px 0 0 0;
+    width: 170px;
+    padding: 15px 0;
+}
+
+#tabs .register-button:hover {
+    opacity: 0.9;
+    transition: .2s;
+}
+
+/* For jQuery UI tabs */
+.ui-tabs-vertical { 
+    display: flex;
+}
+
+.ui-tabs-vertical .ui-tabs-nav { 
+    float: left; 
+    background-color: transparent;
+    border: 0;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li { 
+    clear: left; 
+    border: 0;
+    width: 100%;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li a { 
+    display: block;
+    width: 130px;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { 
+    background-color: #449DD1; 
+}
+
+.ui-tabs-vertical .ui-tabs-panel { 
+    padding: 16px; 
+    float: right; 
+    width: 100%;
+}
+
+/* For jQuery UI accordion */
+.accordion .ui-accordion-header.ui-state-active {
+    border: 0;
+    background-color: #449DD1;
+}
+
+/* For table in schedule */
+.schedule {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.schedule td, .schedule th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.schedule tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule tbody tr:hover {
+    cursor: pointer;
+    background-color: #dddddd;
+}
+
+.schedule th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #449DD1;
+    color: #ffffff;
+}
+
+.schedule td a,
+.schedule td a:visited {
+    color: #3943B7;
+    text-decoration: none;
+}
+
+.schedule td a:hover {
+    text-decoration: underline;
+}

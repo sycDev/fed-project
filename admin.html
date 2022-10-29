@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Administration</title>
+    <link rel="icon" href="img/company-logo.png">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/admin-style.css">
+
+    <!--Font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0">
+    
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" 
+    crossorigin="anonymous"></script>
+
+    <script src="js/localstorage.js"></script>
+
+    <script>
+        // load common header and footer
+        $(document).ready(function() {
+            $('header').load("common/header.html");
+            $('footer').load("common/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header></header>
+
+    <!--Content-->
+    <div class="container">
+        <h1 style="text-align: center;">Leads Administration</h1>
+        <div class="button-wrapper">
+            <a href="admin-add.html" class="add-button">
+                <span class="material-symbols-outlined" style="vertical-align: middle;">add_circle</span>
+                 Add Leads
+            </a>
+        </div>
+        <table class="lead-data" id="lead-data">
+            <!--Table content-->
+        </table>
+    </div>
+
+    <!--Footer-->
+    <footer></footer>
+
+    <script>
+        // set the records set an empty array as default if there have no records
+        let leadRecords = JSON.parse(localStorage.getItem("leads_data")) || [];
+        // show the listing of lead records
+        listData(leadRecords);
+    </script>
+</body>
+</html>

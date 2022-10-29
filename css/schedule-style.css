@@ -1,0 +1,66 @@
+.container {
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* For the timetable */
+.timetable {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.timetable td, 
+.timetable th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.timetable tbody:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.timetable tbody:hover {
+    cursor: pointer;
+    background-color: #dddddd;
+}
+
+.timetable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: transparent;
+    color: #232323;
+}
+
+.timetable a, 
+.timetable a:visited {
+    display: block;
+    text-decoration: none;
+    color: #3943B7;
+}
+
+.timetable a:hover {
+    text-decoration: underline;
+}
+
+/* For the back button */
+.back-button {
+    display: block;
+    color: #232323;
+    text-decoration: none;
+    border: 2px solid #3943B7;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    padding: 10px 0;
+    margin: 10px auto;
+}
+
+.back-button:hover {
+    background-color: #3943B7;
+    color: #ffffff;
+}

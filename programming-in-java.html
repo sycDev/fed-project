@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming in Java Course</title>
+    <link rel="icon" href="img/company-logo.png">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/course-details-style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!--Font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" 
+    crossorigin="anonymous"></script>
+
+    <!--jQueryUI-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" 
+    crossorigin="anonymous"></script>
+
+    <script src="js/course-details.js"></script>
+
+    <script>
+        // load common header and footer
+        $(document).ready(function() {
+            $('header').load("common/header.html");
+            $('footer').load("common/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header></header>
+
+    <!--Content-->
+    <div class="container">
+        <h1 style="text-align: center;">Programming in Java</h1>
+        <div class="course-banner">
+            <img src="img/course-banner/java-programming-banner.jpg" alt="Programming in Java Course Banner">
+        </div>
+        <div id="tabs">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#tabs-1">Overview</a></li>
+                    <li><a href="#tabs-2">Program Structure</a></li>
+                    <li><a href="#tabs-3">Schedule</a></li>
+                </ul>
+                <a href="register.html" class="register-button">Register Now</a>
+            </div>
+            <div id="tabs-1">
+                <p>
+                    This course offers a solid foundation in Java Programming for students that without 
+                    any programming experience. The syllabus starts with a basic introduction to Java and students will 
+                    learn how to write their first simple Java application. Besides learning basic Java syntax and structure, 
+                    object-oriented principles will also covered in this course.
+                </p>
+                After completing this course, you will able to: 
+                <ul>
+                    <li>Build basic Java Applications</li>
+                    <li>Use Intellij IDEA</li>
+                    <li>Compile and Run Java Applications</li>
+                    <li>Declare and Use Variables</li>
+                    <li>Use Different Types of Data Types</li>
+                    <li>Use Operators and Expressions in Java</li>
+                    <li>Implement Control Flow</li>
+                    <li>Understand Object-Oriented Programming</li>
+                    <li>Use Classes, Objects and Call Methods</li>
+                    <li>Handle Exceptions</li>
+                    <li>Test and Debug Java Applications</li>
+                </ul>
+                <h4>Duration: 26 days</h4>
+            </div>
+            <div id="tabs-2">
+                <div id="accordion-1" class="accordion">
+                    <h3>Module 1: Introduction to Java</h3>
+                    <div>
+                        <ul>
+                            <li>What is Java</li>
+                            <li>How to install Java</li>
+                            <li>Your first Java program</li>
+                            <li>Compiling Java program</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-2" class="accordion">
+                    <h3>Module 2: Using an IDE</h3>
+                    <div>
+                        <ul>
+                            <li>Introduction to Intellij IDEA</li>
+                            <li>Install and run Intellij IDEA</li>
+                            <li>Setting up a Java project</li>
+                            <li>Run and debug Java applications using IDE</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-3" class="accordion">
+                    <h3>Module 3: Data Types and Variables</h3>
+                    <div>
+                        <ul>
+                            <li>Primitive data types</li>
+                            <li>Declarations</li>
+                            <li>Naming convention for variables</li>
+                            <li>String</li>
+                            <li>Arrays</li>
+                            <li>Non-primitive data types</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-4" class="accordion">
+                    <h3>Module 4: Operators and Expressions</h3>
+                    <div>
+                        <ul>
+                            <li>Expressions</li>
+                            <li>Assignment operators</li>
+                            <li>Arithmetic operators</li>
+                            <li>Comparison operators</li>
+                            <li>Logical operators</li>
+                            <li>Increment and decrement operators</li>
+                            <li>Conditional operators</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-5" class="accordion">
+                    <h3>Module 5: Control Flow</h3>
+                    <div>
+                        <ul>
+                            <li>Statements</li>
+                            <li>Conditional if statements</li>
+                            <li>else if statements</li>
+                            <li>Switch statements</li>
+                            <li>while loops</li>
+                            <li>for loops</li>
+                            <li>continue and break statement</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-6" class="accordion">
+                    <h3>Module 6: Methods</h3>
+                    <div>
+                        <ul>
+                            <li>What is methods</li>
+                            <li>Calling methods</li>
+                            <li>Defining methods</li>
+                            <li>Parameters</li>
+                            <li>Static methods</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-7" class="accordion">
+                    <h3>Module 7: Object-Oriented Programming</h3>
+                    <div>
+                        <ul>
+                            <li>Introduction to Object-Oriented</li>
+                            <li>Classes and objects</li>
+                            <li>Fields and methods</li>
+                            <li>Encapsulation</li>
+                            <li>Abstraction</li>
+                            <li>Inheritance</li>
+                            <li>Polymorphism</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-8" class="accordion">
+                    <h3>Module 8: Exception Handling</h3>
+                    <div>
+                        <ul>
+                            <li>Overview of exceptions</li>
+                            <li>Catching exceptions</li>
+                            <li>The finally block</li>
+                            <li>Exception methods</li>
+                            <li>Declaring exceptions</li>
+                            <li>Defining and throwing exceptions</li>
+                            <li>Errors and RuntimeExceptions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="accordion-9" class="accordion">
+                    <h3>Module 9: Test, Debug and Deploy an Application</h3>
+                    <div>
+                        <ul>
+                            <li>Basic skills for testing and debugging</li>
+                            <li>Debugging using IDE</li>
+                            <li>Deploy Java applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <table class="schedule">
+                    <thead>
+                        <tr>
+                            <th>Intake Session</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>October 2022</td>
+                            <td>3 October 2022 - 17 November 2022</td>
+                            <td><a href="oct22-java-schedule.html">View Schedule</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer></footer>
+</body>
+</html>

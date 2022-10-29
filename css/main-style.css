@@ -1,0 +1,144 @@
+/* For all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    position: relative;
+}
+
+.content {
+    padding: 120px 200px 100px 200px;
+    min-height: 100vh;
+}
+
+p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+/* For header */
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1001;
+}
+
+.stickyheader {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 #232323;
+    transition: .3s;
+}
+
+.logo img {
+    float: left;
+    padding: 20px 0 0 100px;
+    height: 70px;
+}
+
+/* For navigation bar */
+nav {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 20px 100px 20px 0;
+}
+
+nav .nav-link {
+	display: inline-block; 
+	padding: 10px;
+}
+
+nav .nav-link a:hover {
+    color: #78C0E0;
+}
+
+nav .register-button {
+    background-color: #3943B7;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block; 
+    margin-left: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a {
+    color: #3943B7;
+    text-decoration: none;
+}
+
+nav .active {
+    color: #449DD1;
+}
+
+nav .register-button:hover {
+	background-color: #449DD1;
+    transition: .3s;
+}
+
+/* For footer */
+.footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+    padding: 20px;
+}
+
+.footer a {
+    color: #232323;
+    text-decoration: none;
+}
+
+.follow { 
+    width: 100%;
+    text-align: center;
+}
+
+.follow .text, 
+.follow .link {
+    display: inline-block;
+}
+
+.follow ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.follow li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+}
+
+.follow i {
+    padding-left: 5px;
+}
+
+.copyright { 
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 60px 0;
+}
+
+.copyright ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.copyright li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}

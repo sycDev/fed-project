@@ -1,0 +1,45 @@
+<div class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/company-logo-full.png" alt="ABC Learning Center Company Logo"/>
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="about.html">About Us</a></li>
+            <li class="nav-link"><a href="courses.html">Courses</a></li>
+            <li class="nav-link"><a href="contact.html">Contact Us</a></li>
+            <a href="register.html" class="register-button">Register Now</a>
+        </ul>
+    </nav>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // set the custom styling for sticky header when the page is not at top
+        if ($(window).scrollTop() > 50) {
+            $('.header').addClass("stickyheader");
+        } else {
+            $('.header').removeClass("stickyheader");
+        }
+
+        // changing the styling of navbar when user scroll down the page
+        window.addEventListener("scroll", function() {
+            if ($(window).scrollTop() > 50) {
+                $('.header').addClass("stickyheader");
+            } else {
+                $('.header').removeClass("stickyheader");
+            }
+        });
+
+        // change the color of navbar link based on active page
+        document.querySelectorAll('nav > ul > li > a').forEach((nav) => {
+            if (nav.pathname === window.location.pathname) {
+                nav.classList.add('active');
+            } else {
+                nav.classList.remove('active');
+            }
+        });
+    });
+</script>
