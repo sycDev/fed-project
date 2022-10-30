@@ -72,13 +72,28 @@ function editData(id) {
 
 // delete the selected row of data
 function deleteData(id) {
-    let data = JSON.parse(localStorage.getItem("leads_data"));
-    // remove the selected row of data
-    data.splice(id, 1);
-    // update the local storage
-    setLocalStorage(data);
-    // show the latest record
-    listData(data);
+    // jQueryUI dialog confimation component
+    $("#dialog-confirm").dialog({
+        resizable: false,
+        height: "auto",
+        width: 400,
+        modal: true,
+        buttons: {
+            "Yes": function() {
+                $(this).dialog("close");
+                let data = JSON.parse(localStorage.getItem("leads_data"));
+                // remove the selected row of data
+                data.splice(id, 1);
+                // update the local storage
+                setLocalStorage(data);
+                // show the latest record
+                listData(data);
+            },
+            Cancel: function() {
+                $(this).dialog("close");
+            }
+        }
+    });
 }
 
 // updating the records in local storage using the form input from admin

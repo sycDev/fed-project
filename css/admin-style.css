@@ -64,3 +64,13 @@
     color: #3943B7;
     cursor: pointer;
 }
+
+/* For styling the dialog confirmation box */
+#dialog-confirm {
+    display: none;
+}
+
+#dialog-confirm .ui-icon {
+    float:left; 
+    margin:12px 12px 20px 0;
+}
