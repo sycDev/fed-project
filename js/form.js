@@ -3,10 +3,10 @@ $(function() {
     $('#birthday').datepicker({
         changeMonth: true,
         changeYear: true,
-        yearRange: "-100:+0",
+        yearRange: "-100:-12",
         dateFormat: 'dd/mm/yy',
         showAnim: 'slideDown',
-        maxDate: '0',
+        maxDate: '-12y',
         onClose: function (dateText, inst) {
             // if user had selected date of birth, remove the red border
             if ($(this).val()) {
