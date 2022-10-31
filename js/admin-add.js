@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // when admin submit the form in the add leads page
-    $('#admin-add-lead').submit(function(e) {
+    $('#admin-add').submit(function(e) {
         // data validation upon submit the form
         // if the user didn't select a date of birth
         if ($('#birthday').val() == "") {

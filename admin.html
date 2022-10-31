@@ -22,6 +22,7 @@
     <script src="libraries/jquery-ui-1.13.2/jquery-ui.js"></script>
 
     <script src="js/localstorage.js"></script>
+    <script src="js/admin.js"></script>
 
     <script>
         // load common header and footer
@@ -38,10 +39,11 @@
     <!--Content-->
     <div class="container">
         <h1 style="text-align: center;">Leads Administration</h1>
-        <div class="button-wrapper">
+        <div class="action-wrapper">
+            <input type="text" name="search" id="search" placeholder="Search...">
             <a href="admin-add.html" class="add-button">
-                <span class="material-symbols-outlined" style="vertical-align: middle;">add_circle</span>
-                 Add Leads
+                <span class="material-symbols-outlined">add_circle</span>
+                 Add Lead
             </a>
         </div>
         <table class="lead-data" id="lead-data">
@@ -58,12 +60,5 @@
 
     <!--Footer-->
     <footer></footer>
-
-    <script>
-        // set the records set an empty array as default if there have no records
-        let leadRecords = JSON.parse(localStorage.getItem("leads_data")) || [];
-        // show the listing of lead records
-        listData(leadRecords);
-    </script>
 </body>
 </html>
