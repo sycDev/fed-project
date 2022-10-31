@@ -24,7 +24,6 @@
 }
 
 .timetable tbody:hover {
-    cursor: pointer;
     background-color: #dddddd;
 }
 
