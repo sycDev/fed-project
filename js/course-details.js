@@ -20,14 +20,6 @@ $(function() {
 });
 
 $(document).ready(function() {
-    // when clicked a row in schedule table, link to the following schedule page
-    $(".schedule tbody tr").click(function() {
-        var link = $(this).find("a").attr("href");
-        if (link) {
-            window.location = link;
-        }
-    });
-
     var hash = window.location.hash;
     if (hash) {
         // trim the hash to get the element name
