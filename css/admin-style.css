@@ -9,22 +9,23 @@
 
 /* Styling for the add leads button */
 .action-wrapper {
-    display: flex;  
-    justify-content: right;  
-    align-items: right;
-    width: 90%;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    width: 100%;
 }
 
 .action-wrapper #search {
-    width: 90%;
-    margin: 0 30px 0 130px;
+    display: inline-block;
+    padding: 5px;
     font-size: inherit;
+    margin-right: 30%;
+    width: 18%;
 }
 
 .action-wrapper .add-button {
     font-size: 15px;
-    display: block;
+    display: inline-block;
     color: #232323;
     font-weight: bold;
     text-align: center;
